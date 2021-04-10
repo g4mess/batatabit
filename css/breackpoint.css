@@ -1,0 +1,92 @@
+    header{
+        height: 440px;
+    }
+    .header--title-container{
+        width: 50%;        
+    }
+    .header--title-container h1{
+        font-size: 4.0rem;
+        line-height: 4.2rem;
+
+    }
+    .header--title-container p{
+        font-size: 2.0rem;
+        line-height: 2.4rem;
+    }
+
+    .section__one h2{
+        font-size: 4.0rem;
+        line-height: 4.2rem;        
+    }
+    .section__one .section__one--container-text{
+        width: 466px;
+        margin-bottom: 25px;
+    }
+    .section__one .section__one--container-text p{
+        font-size: 2.0rem;
+        line-height: 2.4rem;       
+    }
+    .section__two{
+        height: 644px;
+    }
+    .section__two h2{
+        font-size: 4.0rem;
+        line-height: 4.2rem;
+    }
+    .section__two .section__two--container--text{
+        width: 60%;
+    }
+    .section__two .section__two--container--text p{
+        font-size: 2.0rem;
+        line-height: 2.4rem;
+        width: 440px;
+        margin: 0 auto;
+    }
+    .section__two--container{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 790px;
+        align-self: center;
+        margin-top: 20px;
+        
+    }
+    .section__two .section__two--container .section__two--container-target1{
+        margin-top: 8px;
+    }
+    .section__two .section__two--container div{
+        width: 48%;
+        margin: 8px auto;
+        
+
+    }
+    .section__three .section__three--background{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section__three .section__three--background h2{
+        font-size: 4.0rem;
+        line-height: 4.2rem;
+        margin: 0;
+        
+    }
+    .section__four h2{
+        font-size: 4.0rem;
+        line-height: 4.2rem;
+    }
+    .section__four p{
+        font-size: 2.0rem;
+        line-height: 2.4rem;
+    }
+    .section__four .preguntas__frecuentes{
+        width: 60%;
+        max-width: 700px;
+    }
+    .preguntas__frecuentes .preguntas__frecuentes--text p{
+        width: 80%;
+        font-size: 2.0rem;
+        line-height: 2.4rem;
+    }

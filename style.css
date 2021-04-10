@@ -1,0 +1,635 @@
+/*  1. Posicionamiento
+    2. Modelo caja
+    3. Tipografia
+    4. Visuales
+    5. otro
+*/
+:root{
+    /* Colores */
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue:#1A9AF7;
+    --soft-blue:#E7F5FF;
+    --warm-black:#201E1C;
+    --warm-black-one:#282623;
+    --Grey:#BABABA;
+    --off-white:#FAF8F7;
+    --just-white:#FFFFFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior:smooth;
+}
+header{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px; /*Mini-phone*/
+    text-align: center;
+    height: 295px;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+header img{
+    width: 151px;
+    height: 24px;
+    margin-top: 39px;
+    align-self: center;
+}
+.header--title-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 33px;
+    text-align: center;
+    align-self: center;
+}
+.header--title-container h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height:2.6rem;
+    color: var(--just-white);
+}
+
+.header--title-container p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+    margin-top: 24px;
+}
+.header--title-container .header--button{
+    position: absolute;
+    left: calc(50% - 229px/2);
+    top: calc(100% - 48px/2);
+    display: block;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /*sombra*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.823rem;
+    text-decoration: none;
+    color: var(--warm-black);   
+}
+.header--button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 14px;
+    background-image: url(./assets/icons/down-arrow.svg);
+    
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+    min-width: 320px;
+
+}
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section__one{
+    width: 100%;
+    min-width: 320px;
+    text-align: center;
+}
+
+.section__one .section__one--background{
+    width: 195px;
+    height: 195px;
+    background-image: url(./assets/img/Bitcoin.svg);
+    margin-top:59px;
+    align-self: center;
+}
+.section__one .section__one--container-text{
+    width: 90%;
+    min-width: 288px;
+    max-width:900px;
+    margin-top:40px;
+    height:130px;
+    align-self: center;
+}
+
+.section__one--container-text h2{
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    color: var(--warm-black);
+}
+
+.section__one--container-text p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight:500;
+    color: #757575;
+    margin-top: 24px;
+}
+.section__one--table-container-now{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    width: 100%;
+    padding: 0px 45px;
+    min-width: 235px;
+    max-width: 600px;
+    height: 300px;
+    margin-top:48px;
+    
+    align-self: center;
+    font-family: "Inter", sans-serif;
+}
+.section__one--table-container-now .container-now-table--title{
+    display: inline-block;
+    font-size: 1.8rem;
+    line-height: 2.344rem;
+    font-weight: bold;
+    font-family: "DM Sans", sans-serif;
+    text-align: left;
+    color:#FF9536;
+    margin-left: 14px;
+    width: 95%;
+    max-width: 300px;
+    
+}
+.container-now-table--container{
+    width: 90%;
+    min-width: 230px;
+    max-width: 310px;
+    height: 160px;
+    border-radius: 5px;
+    scroll-snap-align:center;
+    
+}
+.container-now-table--container table{
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    margin-top: 12px;
+    
+}
+.container-now-table--container td{
+    width: 50%;
+    font-size: 1.6rem;
+    color: #B5B0AC;
+    font-weight: 500;
+    line-height: 1.9rem;
+    background-color: var(--just-white);
+    
+}
+.container-now-table--container .table__top-left{
+    border-radius: 8px 0px 0px 0px;
+}
+.container-now-table--container .table__top-right{
+    border-radius: 0px 8px 0px 0px;
+}
+.container-now-table--container .table__bottom-left{
+    border-radius: 0px 0px 0px 8px;
+}
+.container-now-table--container .table__bottom-right{
+    border-radius: 0px 0px 8px 0px;
+}
+
+.container-now-table--container .table__right{
+    font-family: "Inter", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 400;
+    color: #757575;
+    margin: 0 auto;
+}
+
+.table__right .down{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url(./assets/icons/trending-down.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 10px;
+}
+.table__right .up{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url(./assets/icons/trending-up.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 10px;
+    background-size: cover;
+}
+.section__one--table-container-now .section__one--date{
+    display: inline-block;
+    width: 125px;
+    height: 32px;
+    background-color: var(--soft-orange);
+    margin-top: 16px;
+    align-self: center;
+    border-radius: 8px;
+    max-width:290px;
+}
+.section__one--table-two .container-now-table--title--two{
+    color:var(--secondary-blue);
+
+}
+.section__one--table-two{
+    scroll-snap-align:center;
+    margin: 0px 15px;
+}
+
+.section__one--table-two .section__one--date--two{
+    background-color: var(--soft-blue)
+}
+
+.section__one--date p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 8px;
+}
+
+.section__one--icon-two{
+    position: absolute;
+    width: 41px;
+    height: 25px;
+    background-image: url(./assets/icons/batata.svg);
+    background-size:cover;
+    left: calc(50% - 25px);
+    top: calc(100% - 12.5px);
+    z-index: 1;
+}
+.section__two{
+    width: 100%;
+    min-width: 320px;
+    height: 900px;
+    background-color: var(--warm-black);
+}
+.section__two--container{
+    width: 90%;
+    min-width: 290px;
+    text-align: center;
+    align-self: center;
+}
+.section__two--container--text{
+    align-self: center;
+    width: 80%;
+    text-align: center;
+}
+.section__two--container--text p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #808080;
+    margin-top: 10px;
+    
+}
+.section__two--container--text h2{
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    color: var(--just-white);
+    margin-top: 64px;
+    margin-bottom: 24px;
+}
+
+.section__two--container p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #808080;
+    margin-top: 10px;
+}
+.section__two--container h3{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    color: var(--just-white);
+    margin-top: 10px;
+
+}
+.section__two .section__two--container .section__two--container-target1{
+    margin-top:32px;
+}
+.section__two .section__two--container div{
+    background-color: var(--warm-black-one);
+    display: inline-block;
+    width: 90%;
+    min-width: 290px;
+    max-width: 500px;
+    height: 152px;
+    text-align: left;
+    padding: 16px;
+    margin: 8px auto 8px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+}
+.section__two--container-target1 span{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/icons/clock.svg)
+}
+.section__two--container-target2 span{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/icons/eye.svg)
+}
+.section__two--container-target3 span{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/icons/dollar-sign.svg)
+}
+.section__two--container-target4 span{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/icons/check-circle.svg)
+}
+
+.section__three{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+}
+.section__three .section__three--background{
+    background-image: url(./assets/img/bitcoinbaby2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    
+}
+
+.section__three .section__three--background h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    text-align: center;
+    margin-top:64px;
+    color: var(--just-white);
+}
+.section__four{
+    position: relative;
+    height: auto;
+    text-align: center; 
+}
+.section__four_box--text{
+    width: 80%;
+    min-width: 288px;
+    margin-top:80px;
+    align-self: center;
+}
+.section__four_box--text h2{
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    color: var(--warm-black);
+}
+.section__four_box--text p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color:#757575;
+    margin-top: 24px;
+}
+.section__four--slider{
+    justify-content:left;
+    position: relative;
+    display: flex;
+    margin: 30px 10px 0px 10px;
+    flex-direction: row;
+    height: 316px;
+    overflow-x:scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    align-content: center;
+}
+
+.target--two{
+    position: relative;
+    scroll-snap-align: center;
+    width: 190px;
+    min-width: 190px;
+    height: 241px;
+    background-color: var(--just-white);
+    margin: 20px 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius:8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.target--firt{
+    position: relative;
+    scroll-snap-align: center;
+    width: 190px;
+    min-width: 190px;
+    height: 241px;
+    background-color: var(--just-white);
+    margin: 20px 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius:8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.target--firt .recomendado{
+    position: absolute;
+    width: 101px;
+    height: 31px;
+    top: calc(0% - 15.5px);
+    left: calc(50% - 50.5px);
+    padding: 8px;
+    margin-top: 0;
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+    font-size: 1.2rem;
+    line-height: 1.452;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.plan__container--info h3{
+    margin-top: 16px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-top: 31px;
+    color: #000;
+
+}
+.plan__container--info .precio{
+   margin-top: 8px;
+   font-size: 5.2rem;
+   line-height: 6.293rem;
+   color: #000;
+   font-family: "Inter", sans-serif;
+}
+.plan__container--info .precio .dollar{
+    font-size: 1.2rem;
+    line-height: 1.452rem;
+    color: #363636;
+    font-family: "Inter", sans-serif;
+    vertical-align: 28px;
+ }
+.plan__container--info .texto{
+    font-size: 1.2rem;
+    line-height: 1.452rem;
+    color: #757575;
+    margin-top: 3px;
+ }
+ .plan__container--info button{
+    display: block;
+    width: 151px;
+    height: 48px;
+    margin: 16px auto;
+    border-radius: 8px;
+    border: 2px solid var(--bitcoin-orange);
+    background-color: var(--off-white);
+    padding: 10px;
+}
+.plan__container--info button p{
+    display: inline-block;
+    color: var(--warm-black);
+    font-weight: bold;
+    font-size: 1.4rem;
+    vertical-align: 4px;
+    
+
+}
+ .plan__container--info .arrow{
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     background-image: url(./assets/icons/orange-right-arrow.svg);
+     background-repeat: no-repeat;
+     background-position: center;
+     margin-left:6px;
+     
+ }  
+
+.target--thre{
+    position: relative;
+    scroll-snap-align: center;
+    width: 190px;
+    min-width: 190px;
+    height: 241px;
+    background-color: var(--just-white);
+    margin: 20px 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius:8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+    min-width: 320px;
+}
+.footer__links{
+    justify-content: center;
+    align-items: center;    
+    width: 50%;
+    display: flex;
+
+}
+.footer__links ul{
+    list-style: none;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500px;
+}
+.footer__links li{
+    margin: 10px 0;
+}
+.footer__links a{
+    text-decoration: none;
+    color: var(--just-white);
+}
+.footer__links img{
+    width: 90px;
+    height: auto;
+}
+.section__four .preguntas__frecuentes{
+    margin-top: 10px;
+    max-width: 350px;
+    align-self: center;
+}
+.section__four .preguntas__frecuentes h2{
+    width: 80%;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+    margin: 0 auto;
+}
+.section__four .preguntas__frecuentes p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #757575;
+    width: 239px;
+    text-align: left;
+    margin: 15px;
+    max-width:345px;
+}
+.preguntas__frecuentes .preguntas__frecuentes--text{
+    align-self:flex-start;
+    margin-bottom: 30px;
+    flex-wrap:wrap;
+    
+}
+.only--icons{
+    position: relative;
+    display: flex;
+    width: 20%;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;  
+}
+.only--icons span{
+    width: 36px;
+    height: 36px;
+    background-image: url(./assets/icons/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.only--text{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.only--text--one{
+    flex-direction: column;
+    width: 80%;
+}
+
+@media (min-width: 620px){
+    .section__four .section__four--slider{
+    justify-content:center;}
+    .footer__links img{
+        width: 112px;
+        height: auto;
+    }   
+}
